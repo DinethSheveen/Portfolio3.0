@@ -2,10 +2,39 @@
 @import "tailwindcss";
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Merriweather", serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
     background-color: black;
-    color: hsl(0, 0%, 100%);
+}
+
+
+.icon{
+    animation: arrow-bounce 0.7s infinite alternate;
+}
+
+@keyframes arrow-bounce{
+    from{
+        transform: translateY(-5px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.animate{
+    animation: scrollY 0.8s infinite
+}
+
+@keyframes scrollY{
+    from{
+        transform : translateY(0)
+    }
+    to{
+        transform: translateY(100%);
+    }
 }
