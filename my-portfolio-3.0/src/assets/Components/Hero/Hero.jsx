@@ -1,33 +1,53 @@
 import React from 'react'
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { RiAlignItemBottomFill } from "react-icons/ri";
+import { RiCompassDiscoverLine } from "react-icons/ri";
 
 function Hero() {
 
     const array = [
         {
-            word : "ideas"
+            word : "ideas",
+            icon : <RiCompassDiscoverLine/>
         },
         {
-            word : "projects"
+            word : "products",
+            icon : <RiAlignItemBottomFill/>
         },
         {
-            word : "code"
-        }
+            word : "code",
+            icon : <LiaLaptopCodeSolid/>
+        },
+                {
+            word : "ideas",
+            icon : <RiCompassDiscoverLine/>
+        },
+        {
+            word : "products",
+            icon : <RiAlignItemBottomFill/>
+        },
+        {
+            word : "code",
+            icon : <LiaLaptopCodeSolid/>
+        },
     ]
 
   return (
-    <div className='text-white border-white border-2 mt-32'>
+    <div className='text-white mt-32'>
         {/* FLEX-CONTAINER */}
         <div className="flex justify-between items-center px-10">
             {/* RIGHT - INTRO */}
-            <div className="flex flex-col gap-2 w-md border-2 border-amber-300">
+            <div className="flex flex-col gap-4 w-md">
                 <div>
-                    <h1 className='text-2xl md:text-5xl flex gap-4 items-center'>
+                    <h1 className='text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
-                        <span className='border-2 border-amber-50 overflow-hidden'>
-                            <span className='flex items-center gap-2 animate'><LiaLaptopCodeSolid/>{array.map((arr)=>{return(
-                                <>{arr.word}</>
+                        <span className='overflow-hidden'>
+                            <span className='flex flex-col gap-12 justify-center items-center h-12 slider-animate'>{array.map((arr)=>{return(
+                                <span className="flex items-center gap-2">
+                                    {arr.icon}
+                                    {arr.word}
+                                </span>
                             )})}
                             </span>
                         </span>
@@ -47,7 +67,7 @@ function Hero() {
 
                 {/* BUTTON */}
                 <div>
-                    <button className='bg-sky-50 px-6 py-3 text-black rounded-[10px]'><a href="#projects" className='flex items-center gap-2'>See me work <FaRegArrowAltCircleDown className='icon'/></a></button>
+                    <button className='bg-sky-50 px-6 py-3 text-black rounded-[10px] hover:bg-sky-100 active:bg-sky-200'><a href="#projects" className='flex items-center gap-2'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a></button>
                 </div>
 
             </div>
