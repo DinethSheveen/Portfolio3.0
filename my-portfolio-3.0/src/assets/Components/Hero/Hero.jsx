@@ -20,11 +20,11 @@ function Hero() {
             icon : <LiaLaptopCodeSolid/>
         },
                 {
-            word : "ideas",
+            word : "concepts",
             icon : <RiCompassDiscoverLine/>
         },
         {
-            word : "products",
+            word : "designs",
             icon : <RiAlignItemBottomFill/>
         },
         {
@@ -43,7 +43,7 @@ function Hero() {
                     <h1 className='text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
                         <span className='overflow-hidden'>
-                            <span className='flex flex-col gap-12 justify-center items-center h-12 slider-animate'>{array.map((arr)=>{return(
+                            <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{array.map((arr)=>{return(
                                 <span className="flex items-center gap-2">
                                     {arr.icon}
                                     {arr.word}
