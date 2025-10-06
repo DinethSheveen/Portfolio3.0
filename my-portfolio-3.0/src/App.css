@@ -13,7 +13,7 @@ body{
 }
 
 
-.icon{
+.arrow-animate{
     animation: arrow-bounce 0.7s infinite alternate;
 }
 
@@ -26,15 +26,31 @@ body{
     }
 }
 
-.animate{
-    animation: scrollY 0.8s infinite
+.slider-animate {
+  animation: scrollY 15s infinite; /* 6 items = steps(6) */
 }
 
+
 @keyframes scrollY{
-    from{
-        transform : translateY(0)
+    10%{
+        transform: translateY(-100%);
     }
-    to{
-        transform: translateY(100%);
+    /* 20%{
+        transform: translateY(-200%);
     }
+    30%{
+        transform: translateY(-200%);
+    } */
+    50%{
+        transform: translateY(-300%);
+    }
+    70%{
+        transform: translateY(-500%);
+    }
+    /* 80%{
+        transform: translateY(-700%);
+    } */
+    /* 90%{
+        transform: translateY(-800%);
+    } */
 }
