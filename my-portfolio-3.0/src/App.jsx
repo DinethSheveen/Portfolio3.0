@@ -9,6 +9,7 @@ import Experience from './assets/Components/Experience/Experience';
 
 function App() {
 
+  // ANIMATION WORDS AND ICONS FOR THE HERO SECTION
   const heroWords = [
         {
             word : "ideas",
@@ -36,11 +37,31 @@ function App() {
         },
     ]
 
+    //NUMBERS AND WORDS FOR THE EXPERIENCE SHOWCASE
+    const expContents = [
+      {
+        number : 2,
+        wording : "Years of Experience"
+      },
+      {
+        number : 8,
+        wording : "Developer Toolkits"
+      },
+      {
+        number : 20,
+        wording : "Completed Projects"
+      },
+      {
+        number : 1000,
+        wording : "Git Commits"
+      }
+    ]
+
   return (
     <>
     <Navbar/>
     <Hero heroWords={heroWords}/>
-    <Experience/>
+    <Experience expContents={expContents}/>
     </>
   )
 }
