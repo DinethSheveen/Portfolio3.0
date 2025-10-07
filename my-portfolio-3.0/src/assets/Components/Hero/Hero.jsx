@@ -12,8 +12,8 @@ function Hero({heroWords}) {
                     <h1 className='text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
                         <span className='overflow-hidden'>
-                            <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{heroWords.map((heroWord)=>{return(
-                                <span className="flex items-center gap-2 text-gray-400">
+                            <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{heroWords.map((heroWord,index)=>{return(
+                                <span className="flex items-center gap-2 text-gray-400" key={index}>
                                     {heroWord.icon}
                                     {heroWord.word}
                                 </span>
