@@ -1,15 +1,32 @@
 import React from 'react'
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
+import {gsap} from "gsap"
+import {useGSAP} from "@gsap/react"
 
 function Hero({heroWords}) {
+
+    useGSAP(()=>{
+        gsap.fromTo(".fade-in",{
+            y:100,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:2,
+            stagger:0.5
+        }
+    )
+    },[])
+    
+
   return (
     <div className='text-white mt-32'>
         {/* FLEX-CONTAINER */}
         <div className="flex justify-between items-center px-10">
-            {/* RIGHT - INTRO */}
+            {/* LEFT - INTRO */}
             <div className="flex flex-col gap-4 w-md">
                 <div>
-                    <h1 className='text-2xl md:text-5xl flex gap-2 items-center'>
+                    <h1 className='fade-in text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
                         <span className='overflow-hidden'>
                             <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{heroWords.map((heroWord,index)=>{return(
@@ -23,10 +40,10 @@ function Hero({heroWords}) {
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-2xl md:text-5xl'>into real Projects</h1>
+                    <h1 className='fade-in text-2xl md:text-5xl'>into real Projects</h1>
                 </div>
                 <div>
-                    <h1 className='text-2xl md:text-5xl'>that Inspire Change</h1>
+                    <h1 className='fade-in text-2xl md:text-5xl'>that Inspire Change</h1>
                 </div>
 
                 {/* PARA INTRO */}
@@ -40,7 +57,7 @@ function Hero({heroWords}) {
                 </div>
 
             </div>
-            {/* LEFT - 3D MODEL */}
+            {/* RIGHT - 3D MODEL */}
         </div>
     </div>
   )
