@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav className='fixed top-0 w-full'>
+    <nav className='fixed top-0 w-full z-10'>
         <div className='md:mx-8 md:my-4'>
             {/* FLEX CONTAINER */}
             <div className="text-white flex justify-between items-center bg-gray-900 px-8 py-4 md:rounded-2xl">
