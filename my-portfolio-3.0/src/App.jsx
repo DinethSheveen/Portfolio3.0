@@ -5,6 +5,7 @@ import Hero from "./assets/Components/Hero/Hero"
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { RiAlignItemBottomFill } from "react-icons/ri";
 import { RiCompassDiscoverLine } from "react-icons/ri";
+import Experience from './assets/Components/Experience/Experience';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
     <>
     <Navbar/>
     <Hero heroWords={heroWords}/>
+    <Experience/>
     </>
   )
 }
