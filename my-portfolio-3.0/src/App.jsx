@@ -2,11 +2,23 @@ import React from 'react'
 import "./App.css"
 import Navbar from './assets/Components/Navbar/Navbar'
 import Hero from "./assets/Components/Hero/Hero"
+import Projects from './assets/Components/Projects/Projects';
+
+import Experience from './assets/Components/Experience/Experience';
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { RiAlignItemBottomFill } from "react-icons/ri";
 import { RiCompassDiscoverLine } from "react-icons/ri";
-import Experience from './assets/Components/Experience/Experience';
-import Projects from './assets/Components/Projects/Projects';
+
+import TechAnimation from './assets/Components/TechAnimation/TechAnimation';
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 function App() {
 
@@ -69,10 +81,23 @@ function App() {
       {
         image : "/images/project3.png",
         alt : "e-commerce web app",
-        title : "A modern and responsive e-commerce web application.",
-        description : "A seamless online-store built with React and Css", 
+        title : "E-Commerce Web App built with the use of React JS, CSS",
+        description : "A seamless, user-friendly online-store ", 
       }
   ]
+
+    // TECH ICONS TO THE TECH MARQUEE
+      const tech_icons = [
+        {icon : <FaHtml5/>, stack : "html" , backgroundColor:"bg-white", color : "text-orange-500"},
+        {icon : <FaCss3Alt/>, stack : "css" , backgroundColor:"bg-gray-800", color : "text-blue-400"},
+        {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
+        {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300"},
+        {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400"},
+        {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-gray-800", color : "text-blue-300"},
+        {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-white", color : "text-green-600"},
+        {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
+        {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500"}
+      ]
 
   return (
     <>
@@ -80,6 +105,7 @@ function App() {
     <Hero heroWords={heroWords}/>
     <Experience expContents={expContents}/>
     <Projects side_projects={side_projects}/>
+    <TechAnimation tech_icons={tech_icons}/>
     </>
   )
 }
