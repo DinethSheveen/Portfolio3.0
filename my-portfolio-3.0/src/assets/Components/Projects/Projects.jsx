@@ -1,13 +1,44 @@
 import project2 from "/images/project2.png";
+import { useRef } from "react";
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 function Projects({ side_projects }) {
+
+  //REGISTERING THE SCROLLTRIGGER PLUGIN
+  gsap.registerPlugin(ScrollTrigger)
+  // REACT USEREF
+  const scrollRef = useRef(null)
+
+  useGSAP(()=>{
+    const projects = gsap.utils.toArray(scrollRef.current.querySelectorAll("div"))
+
+    projects.forEach((project)=>{
+      gsap.fromTo(project,{
+        y:50,
+        opacity:0
+      },{
+        y:0,
+        opacity:1,
+        scrollTrigger:{
+          trigger : project,
+          start : "top bottom",
+          end : "bottom 80%",
+          scrub : true
+        }
+      })
+    })
+
+  },[])
+
   return (
     <>
-      <div className="project-showcase px-10">
+      <div className="project-showcase px-10" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col md:flex-row lg:flex-row gap-6">
           {/* LEFT SECTION - PROJECT 01*/}
-          <div className="flex flex-col gap-6 py-20">
+          <div className="flex flex-col gap-6 md:pb-30 lg:pb-30">
             {/* IMAGE-CONTAINER */}
             <div className="flex flex-1">
               <img
