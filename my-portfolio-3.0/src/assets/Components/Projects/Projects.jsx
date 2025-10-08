@@ -19,8 +19,8 @@ function Projects({ side_projects }) {
             </div>
             {/* DESCRIPTION */}
             <div className="project-description">
-              <p className="text-white text-3xl py-7 lg:text-2xl lg:py-4">On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</p>
-              <p className="text-[20px] text-gray-300 py-7 lg:text-[15px] lg:py-0">An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience.</p>
+              <p className="text-white text-3xl py-7 lg:text-2xl lg:py-4">CineScope: A React.js and OMDb, TMDB API-powered app for fast, interactive, and mobile-friendly movie exploration.</p>
+              <p className="text-[20px] text-gray-300 py-7 lg:text-[15px] lg:py-0">An app built with React JS and API Intergration for a fast, user-friendly experience.</p>
             </div>
           </div>
           {/* RIGHT SECTION - PROJECT 02 & 03*/}
