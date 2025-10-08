@@ -6,6 +6,7 @@ import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { RiAlignItemBottomFill } from "react-icons/ri";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 import Experience from './assets/Components/Experience/Experience';
+import Projects from './assets/Components/Projects/Projects';
 
 function App() {
 
@@ -57,11 +58,24 @@ function App() {
       }
     ]
 
+    // SIDE PROJECTS OF THE PROJECT SECTION
+    const side_projects = [
+      {
+        description1 : "On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde",
+        desription2 : "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience."    
+      },
+      {
+        description1 : "On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde",
+        desription2 : "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience."    
+      }
+  ]
+
   return (
     <>
     <Navbar/>
     <Hero heroWords={heroWords}/>
     <Experience expContents={expContents}/>
+    <Projects side_projects={side_projects}/>
     </>
   )
 }
