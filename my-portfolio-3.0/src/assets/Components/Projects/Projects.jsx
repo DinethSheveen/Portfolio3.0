@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import project2 from "/images/project2.png";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap"
+import {useGSAP} from "@gsap/react"
 
 function Projects({ side_projects }) {
+
+  // REGISTERING THE SCROLLTRIGGER PLUGIN
+  gsap.registerPlugin(ScrollTrigger);
+  const scrollRef = useRef(null)
+
+  // USING THE SCROLLTRIGGER IN USEGSAP
+  useGSAP(()=>{
+    const cards = gsap.utils.toArray(scrollRef.current.querySelectorAll("div"))
+
+    cards.forEach((card)=>{
+      gsap.fromTo(card,{
+        y:40,
+        opacity:0
+      },{
+        y:0,
+        opacity:1,
+        scrollTrigger : {
+          trigger : card,
+          start : "top bottom",
+          end : "top 30%",
+          scrub:true
+        }
+      }
+    )
+    })
+  },[])
+
   return (
     <>
-      <div className="project-showcase py-20">
+      <div className="project-showcase py-20" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col gap-4 flex-1 max-h-screen px-10 lg:flex-row lg:justify-center lg:gap-10">
           {/* LEFT SECTION - PROJECT 01*/}
@@ -26,9 +56,9 @@ function Projects({ side_projects }) {
           {/* RIGHT SECTION - PROJECT 02 & 03*/}
           <div className="flex flex-col gap-6 lg:w-[30%] justify-between">
             {/* IMAGE-CONTAINER */}
-            {side_projects.map((side_project) => {
+            {side_projects.map((side_project,index) => {
               return (
-                <div>
+                <div key={index}>
                   <img
                     src={side_project.image}
                     alt= {side_project.alt}
