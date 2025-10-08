@@ -61,12 +61,16 @@ function App() {
     // SIDE PROJECTS OF THE PROJECT SECTION
     const side_projects = [
       {
-        description1 : "On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde",
-        desription2 : "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience."    
+        image : "/images/project2.png",
+        alt: "gsap-landing-page",
+        title : "A visually appealing page built with React JS, TailwindCSS, and GSAP for a fluid user experience.",
+        description : "A 3d Landing page powered with GSAP, React JS and TailwindCSS ", 
       },
       {
-        description1 : "On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde",
-        desription2 : "An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience."    
+        image : "/images/project3.png",
+        alt : "e-commerce web app",
+        title : "A modern and responsive e-commerce web application.",
+        description : "A seamless online-store built with React and Css", 
       }
   ]
 
