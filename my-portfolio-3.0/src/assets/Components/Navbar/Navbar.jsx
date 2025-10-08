@@ -9,7 +9,7 @@ function Navbar() {
                 {/* LOGO */}
                 <p className='text-white font-bold cursor-pointer'><a href="">Dineth | DSF</a></p>
                 {/* MENY ITEMS */}
-                <div className='hidden sm:flex gap-4'>
+                <div className='hidden md:flex gap-4'>
                     <a href="#skills" className='transition-all hover:font-bold hover:tracking-wider'>Skills</a>
                     <a href="#experience" className='transition-all hover:font-bold hover:tracking-wider'>Certificates</a>
                     <a href="#projects" className='transition-all hover:font-bold hover:tracking-wider'>Projects</a>
