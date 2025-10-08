@@ -12,7 +12,7 @@ function Projects({ side_projects }) {
   const scrollRef = useRef(null)
 
   useGSAP(()=>{
-    const projects = gsap.utils.toArray(scrollRef.current.querySelectorAll("div"))
+    const projects = gsap.utils.toArray(scrollRef.current.querySelectorAll(".scroll-in"))
 
     projects.forEach((project)=>{
       gsap.fromTo(project,{
@@ -23,8 +23,8 @@ function Projects({ side_projects }) {
         opacity:1,
         scrollTrigger:{
           trigger : project,
-          start : "top bottom",
-          end : "bottom 80%",
+          start : "top 90%",
+          end : "bottom 90%",
           scrub : true
         }
       })
@@ -40,15 +40,15 @@ function Projects({ side_projects }) {
           {/* LEFT SECTION - PROJECT 01*/}
           <div className="flex flex-col gap-6 md:pb-30 lg:pb-30">
             {/* IMAGE-CONTAINER */}
-            <div className="flex flex-1">
+            <div id="projects" className="flex flex-1">
               <img
                 src={project2}
                 alt="movie search web app"
-                className="rounded-2xl"
+                className="rounded-2xl scroll-in"
               />
             </div>
             {/* DESCRIPTION */}
-            <div className="project-description">
+            <div className="project-description scroll-in">
               <p className="text-white my-2 text-2xl">CineScope: A React.js and OMDb, TMDB API-powered app for fast, interactive, and mobile-friendly movie exploration.</p>
               <p className="text-gray-500">An app built with React JS and API Intergration for a fast, user-friendly experience.</p>
             </div>
@@ -62,9 +62,9 @@ function Projects({ side_projects }) {
                   <img
                     src={side_project.image}
                     alt= {side_project.alt}
-                    className="rounded-2xl"
+                    className="rounded-2xl scroll-in"
                   />
-                  <div className="project-description">
+                  <div className="project-description scroll-in">
                     <p className="text-white my-2">
                       {side_project.title}
                     </p>
