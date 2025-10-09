@@ -27,7 +27,7 @@ function TechAnimation({tech_icons}) {
   return (
     <>
         {/* ICON WRAPPER */}
-        <div className="my-20 py-20">
+        <div className="my-10 py-20 md:my-20 md:py-20 lg:my-20 lg:py-20 xl:my-20 xl:py-20">
             {/* FLEX-CONTAINER */}
             <div className="flex justify-center flex-wrap text-white text-4xl sm:gap-4 sm:text-5xl md:text-5xl md:gap-4 lg:text-7xl xl:text-7xl xl:gap-6 icon-wrapper">
                 {tech_icons.map((tech_icon)=>{
