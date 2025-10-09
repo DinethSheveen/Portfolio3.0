@@ -1,15 +1,15 @@
 import React from 'react'
 import "./App.css"
-import Navbar from './assets/Sections/Navbar/Navbar'
-import Hero from "./assets/Sections/Hero/Hero"
-import Projects from './assets/Sections/Projects/Projects';
+import Navbar from './assets/Sections/Navbar'
+import Hero from "./assets/Sections/Hero"
+import Projects from './assets/Sections/Projects';
 
-import Experience from './assets/Sections/Experience/Experience';
+import Experience from './assets/Sections/Experience';
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { RiAlignItemBottomFill } from "react-icons/ri";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 
-import TechAnimation from './assets/Sections/TechAnimation/TechAnimation';
+import TechAnimation from './assets/Sections/TechAnimation';
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -17,7 +17,7 @@ import { SiMysql } from "react-icons/si";
 import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
-import Featured from './assets/Sections/Featured/Featured';
+import Featured from './assets/Sections/Featured';
 
 function App() {
 
