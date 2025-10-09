@@ -88,8 +88,6 @@ function App() {
 
     // TECH ICONS TO THE TECH MARQUEE
       const tech_icons = [
-        {icon : <FaHtml5/>, stack : "html" , backgroundColor:"bg-white", color : "text-orange-500"},
-        {icon : <FaCss3Alt/>, stack : "css" , backgroundColor:"bg-gray-800", color : "text-blue-400"},
         {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
         {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300"},
         {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400"},
