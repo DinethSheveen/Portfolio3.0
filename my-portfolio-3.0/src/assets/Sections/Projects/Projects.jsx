@@ -3,6 +3,7 @@ import { useRef } from "react";
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import TitleHeader from "../../Components/TitleHeader/TitleHeader";
 
 function Projects({ side_projects }) {
 
@@ -34,10 +35,7 @@ function Projects({ side_projects }) {
 
   return (
     <>
-      <div className="flex justify-center items-center">
-        <p className="text-white m-10 py-2 px-6 bg-gray-600 rounded-[20px]">🚀 Project Overview</p>
-      </div>
-
+      <TitleHeader title="🚀 Project Overview"/>
       <div className="project-showcase px-10" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col md:flex-row lg:flex-row gap-6">
