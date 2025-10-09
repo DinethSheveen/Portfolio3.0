@@ -3,7 +3,7 @@ import { useRef } from "react";
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import TitleHeader from "../../Components/TitleHeader/TitleHeader";
+import TitleHeader from "../Components/TitleHeader/TitleHeader";
 
 function Projects({ side_projects }) {
 
