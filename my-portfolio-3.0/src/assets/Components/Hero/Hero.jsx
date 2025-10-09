@@ -13,7 +13,7 @@ function Hero({heroWords}) {
             y:0,
             opacity:1,
             duration:2,
-            stagger:0.5
+            stagger:0.2
         }
     )
     },[])
@@ -48,7 +48,7 @@ function Hero({heroWords}) {
 
                 {/* PARA INTRO */}
                 <div>
-                    <p className='text-white'>Hi, I'm Dineth. Passionate developer turning ideas into elegant solutions</p>
+                    <p className='fade-in text-white'>Hi, I'm Dineth. Passionate developer turning ideas into elegant solutions</p>
                 </div>
 
                 {/* BUTTON */}
