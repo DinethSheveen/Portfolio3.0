@@ -31,10 +31,10 @@ function TechAnimation({tech_icons}) {
         {/* ICON WRAPPER */}
         <div className="my-20 py-20">
             {/* FLEX-CONTAINER */}
-            <div className="flex gap-6 justify-center text-white xl:text-7xl lg:text-5xl text-3xl flex-wrap icon-wrapper">
+            <div className="flex gap-2 justify-center text-white text-3xl flex-wrap xl:text-7xl xl:gap-6 lg:text-5xl lg:gap-4 icon-wrapper">
                 {tech_icons.map((tech_icon)=>{
-                    return (
-                        <p className={`${tech_icon.backgroundColor} ${tech_icon.color} cursor-pointer rounded-full p-2 icons`} key={tech_icon.stack}>{tech_icon.icon}</p>
+                    return ( 
+                            <p className={`${tech_icon.backgroundColor} ${tech_icon.color} cursor-pointer rounded-full p-2 icons`} key={tech_icon.stack}>{tech_icon.icon}</p>
                     )
                 })}
             </div>
