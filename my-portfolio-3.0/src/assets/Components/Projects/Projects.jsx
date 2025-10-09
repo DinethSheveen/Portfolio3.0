@@ -40,7 +40,7 @@ function Projects({ side_projects }) {
           {/* LEFT SECTION - PROJECT 01*/}
           <div className="flex flex-col gap-6 md:pb-30 lg:pb-30">
             {/* IMAGE-CONTAINER */}
-            <div id="projects" className="flex flex-1">
+            <div className="flex flex-1">
               <img
                 src={project2}
                 alt="movie search web app"
