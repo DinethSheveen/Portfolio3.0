@@ -18,6 +18,7 @@ import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import Featured from './assets/Sections/Featured';
+import Skills from './assets/Sections/Skills';
 
 function App() {
 
@@ -87,13 +88,13 @@ function App() {
 
   // TECH ICONS TO THE TECH MARQUEE
     const tech_icons = [
+      {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400",skill:"Responsive Design"},
+      {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300", skill:"React Development"},
+      {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500",skill:"Project Management"},
+      {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-gray-800", color : "text-green-600",skill:"Backend Devlepment"},
       {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
-      {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300"},
-      {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400"},
-      {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-gray-800", color : "text-blue-300"},
-      {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-white", color : "text-green-600"},
       {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
-      {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500"}
+      {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-white", color : "text-blue-300"}
     ]
 
     // FEATURED SECTION
@@ -111,6 +112,7 @@ function App() {
     <Projects side_projects={side_projects}/>
     <TechAnimation tech_icons={tech_icons}/>
     <Featured featured_details={featured_details}/>
+    <Skills tech_icons={tech_icons}/>
     </>
   )
 }
