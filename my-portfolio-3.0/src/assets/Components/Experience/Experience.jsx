@@ -5,7 +5,7 @@ function Experience({expContents}) {
   return (
     <>
         {/* EXPERIENCE SHOWCASE CONTAINER */}
-        <div className="mt-20 py-20 px-10 text-white">
+        <div className="mt-20 py-10 px-10 text-white">
             {/* GRID-CONTAINER */}
             <div className="grid gap-10 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
                 {expContents.map((expContent,index)=>{return (

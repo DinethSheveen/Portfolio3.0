@@ -23,7 +23,7 @@ function Projects({ side_projects }) {
         opacity:1,
         scrollTrigger:{
           trigger : project,
-          start : "top 90%",
+          start : "top 100%",
           end : "bottom 90%",
           scrub : true
         }
@@ -34,6 +34,10 @@ function Projects({ side_projects }) {
 
   return (
     <>
+      <div className="flex justify-center items-center">
+        <p className="text-white m-10 py-2 px-6 bg-gray-600 rounded-[20px]">🚀 Project Overview</p>
+      </div>
+
       <div className="project-showcase px-10" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col md:flex-row lg:flex-row gap-6">
