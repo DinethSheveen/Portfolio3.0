@@ -49,7 +49,7 @@ function Projects({ side_projects }) {
             </div>
             {/* DESCRIPTION */}
             <div className="project-description scroll-in">
-              <p className="text-white my-2 text-2xl">CineScope: A React.js and OMDb, TMDB API-powered app for fast, interactive, and mobile-friendly movie exploration.</p>
+              <p className="text-white my-2 md:text-2xl">CineScope: A React.js and OMDb, TMDB API-powered app for fast, interactive, and mobile-friendly movie exploration.</p>
               <p className="text-gray-500">An app built with React JS and API Intergration for a fast, user-friendly experience.</p>
             </div>
           </div>
