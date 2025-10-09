@@ -19,6 +19,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import Featured from './assets/Components/Featured/Featured';
 
 function App() {
 
@@ -86,16 +87,23 @@ function App() {
       }
   ]
 
-    // TECH ICONS TO THE TECH MARQUEE
-      const tech_icons = [
-        {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
-        {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300"},
-        {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400"},
-        {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-gray-800", color : "text-blue-300"},
-        {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-white", color : "text-green-600"},
-        {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
-        {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500"}
-      ]
+  // TECH ICONS TO THE TECH MARQUEE
+    const tech_icons = [
+      {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
+      {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300"},
+      {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400"},
+      {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-gray-800", color : "text-blue-300"},
+      {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-white", color : "text-green-600"},
+      {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
+      {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500"}
+    ]
+
+    // FEATURED SECTION
+    const featured_details = [
+      {icon : "/icons/podium_icon.svg",title:"Excellence Driven",message:"Committed to producing outstanding results with precision and care."},
+      {icon : "/icons/message_icon.svg",title:"Clarity First",message:"Sharing timely updates to keep everything aligned and transparent."},
+      {icon : "/icons/clock_icon.svg",title:"Deadline-Driven Results",message:"Completing tasks efficiently with accuracy and attention to detail."}
+    ]
 
   return (
     <>
@@ -104,6 +112,7 @@ function App() {
     <Experience expContents={expContents}/>
     <Projects side_projects={side_projects}/>
     <TechAnimation tech_icons={tech_icons}/>
+    <Featured featured_details={featured_details}/>
     </>
   )
 }
