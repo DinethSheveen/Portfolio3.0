@@ -2,7 +2,6 @@ import React from 'react'
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import {gsap} from "gsap"
 import {useGSAP} from "@gsap/react"
-import Spline from '@splinetool/react-spline';
 
 function Hero({heroWords}) {
 
@@ -59,8 +58,7 @@ function Hero({heroWords}) {
 
             </div>
             {/* RIGHT - 3D MODEL */}
-            <div className="w-full md:w-1/2 h-96 md:h-[500px]">
-                    <Spline scene="https://prod.spline.design/q9f0deqRWGk5gEi2/scene.splinecode" />
+            <div className="">
             </div>
         </div>
     </div>
