@@ -45,7 +45,7 @@ function Skills({tech_icons}) {
                 return (
                     // CONDITONAL RENDERING THE FEATURED ONLY
                     index<4 &&
-                    <div className='flex bg-gray-900 rounded-full justify-center items-center gap-5 p-3 hover:bg-gray-800 w-full'>
+                    <div key={index} className='flex bg-gray-900 rounded-full justify-center items-center gap-5 p-3 hover:bg-gray-800 w-full'>
                         <div className={`${tech_icon.color} text-3xl md:text-5xl lg:text-7xl`}>{tech_icon.icon}</div>
                         <div className='text-white'>{tech_icon.skill}</div>
                     </div>
