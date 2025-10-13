@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import {gsap} from "gsap"
 import {useGSAP} from "@gsap/react"
+import Hero3D from '../Components/3D-Models/HeroSection/Hero3D';
 
 function Hero({heroWords}) {
 
@@ -22,9 +23,9 @@ function Hero({heroWords}) {
   return (
     <div className='text-white mt-32'>
         {/* FLEX-CONTAINER */}
-        <div className="flex justify-between items-center px-10">
+        <div className="flex flex-col gap-10 justify-between items-center px-10 lg:flex-row xl:flex-row lg:gap-4 xl:gap-6">
             {/* LEFT - INTRO */}
-            <div className="flex flex-col gap-4 w-md">
+            <div className="flex flex-col gap-4 w-full lg:w-[40%]">
                 <div>
                     <h1 className='fade-in text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
@@ -58,8 +59,9 @@ function Hero({heroWords}) {
 
             </div>
             {/* RIGHT - 3D MODEL */}
-            <div className="">
-            </div>
+            <div className="w-full h-[500px] lg:w-[70%] xl:w-[70%]">
+                <Hero3D/>
+            </div>  
         </div>
     </div>
   )
