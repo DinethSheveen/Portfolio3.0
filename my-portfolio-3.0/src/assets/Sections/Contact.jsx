@@ -18,14 +18,14 @@ function Contact(){
       .sendForm(serviceId, templateId, form.current, {
         publicKey: publicKey,
       })
+      // IF SUCCESSFULL
       .then(
         () => {
-          alert("✅ Your message has been sent! Thank you.");
           form.current.reset(); // Clear the form
           setLoading(false)
         },
+        // IF UNSUCCESSFULL 
         () => {
-          alert("⚠️ Something went wrong. Please try again.");
           setLoading(false)
         },
       );
@@ -39,9 +39,9 @@ function Contact(){
       {/* CONTACT CONTAINER */}
       <div className='my-10 px-10 md:px-10 lg:px-10 xl-px-10'>
         {/* FLEX-CONTAINER */}
-        <div className="flex flex-col justify-center items-center gap-10 lg:lex-row xl:flex-row">
+        <div className="flex flex-col justify-center items-center gap-10 md:flex-row lg:lex-row xl:flex-row">
           {/* LEFT SECTION - FORM*/}
-          <div className="w-full text-white bg-gray-900 rounded-[10px] p-5 md:w-[500px] lg:w-[50%] xl:w-[50%]">
+          <div className="w-full text-white bg-gray-900 rounded-[10px] p-5 md:w-[40%] lg:w-[40%] xl:w-[50%]">
             <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
               <label>Name</label>
               <input type="text" name="name" placeholder='Your good name' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
@@ -53,7 +53,7 @@ function Contact(){
             </form>
             </div>
           {/* RIGHT SECTION - 3D MODEL*/}
-          <div className='w-full h-[300px] lg:w-[50%] xl:w-[50%] md:h-[500px] lg:h-[500px] xl:h-[500px] overflow-x-hidden'>
+          <div className='w-full h-[300px] md:w-[60%] lg:w-[50%] xl:w-[50%] md:h-[500px] lg:h-[500px] xl:h-[500px] overflow-x-hidden'>
             <Contact3D/>
           </div>
         </div>
