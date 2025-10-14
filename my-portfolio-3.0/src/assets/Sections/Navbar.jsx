@@ -15,7 +15,7 @@ function Navbar() {
                     <a href="#experience" className='transition-all hover:font-bold hover:tracking-wider'>Qualifications</a>
                 </div>
                 {/* BUTTON */}
-                <button className='cursor-pointer transition-all bg-gray-700 px-4 py-2 rounded-[10px] hover:bg-transparent hover:border-white hover:border-1'><a href="#contact">Contact me</a></button>
+                <a href='#contact' className='cursor-pointer transition-all bg-gray-700 px-4 py-2 rounded-[10px] hover:bg-transparent hover:border-white hover:border-1'>Contact me</a>
             </div>
         </div>
     </nav>
