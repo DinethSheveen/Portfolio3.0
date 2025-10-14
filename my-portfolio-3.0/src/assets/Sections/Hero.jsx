@@ -25,7 +25,7 @@ function Hero({heroWords}) {
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col gap-10 justify-between items-center px-10 lg:flex-row xl:flex-row lg:gap-4 xl:gap-6">
             {/* LEFT - INTRO */}
-            <div className="flex flex-col gap-4 w-full lg:w-[40%]">
+            <div className="flex flex-col gap-4 lg:w-[40%]">
                 <div>
                     <h1 className='fade-in text-2xl md:text-5xl flex gap-2 items-center'>
                         Shaping 
@@ -59,7 +59,7 @@ function Hero({heroWords}) {
 
             </div>
             {/* RIGHT - 3D MODEL */}
-            <div className="w-full h-[300px] lg:w-[70%] xl:w-[70%] md:h-[500px] lg:h-[500px] xl:h-[500px]">
+            <div className="w-full h-[300px] lg:w-[70%] xl:w-[70%] md:h-[500px] lg:h-[500px] xl:h-[500px] fade-in">
                 <Hero3D/>
             </div>  
         </div>
