@@ -37,7 +37,7 @@ function Skills({tech_icons}) {
     <>
         <TitleHeader  title="⚡ What I Bring To The Table ⚡"/>
         {/* Header */}
-        <div id="skills" className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-gray-200 flex justify-center md:text-3xl lg:text-4xl">Contributary Tech-Skills</div>
+        <div className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-gray-200 flex justify-center md:text-3xl lg:text-4xl">Contributary Tech-Skills</div>
 
         {/* SKILL SHOWCASE */}
         <div className="grid grid-cols-1 gap-10 justify-center items-center max-w-[80%] mx-auto m-10 md:grid-cols-2 md:gap-10 lg:grid-cols-4" ref={scrollRef}>
