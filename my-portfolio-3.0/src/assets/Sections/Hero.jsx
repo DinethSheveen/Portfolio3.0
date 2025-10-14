@@ -59,7 +59,7 @@ function Hero({heroWords}) {
 
             </div>
             {/* RIGHT - 3D MODEL */}
-            <div className="w-full h-[300px] lg:w-[70%] xl:w-[70%] md:h-[500px] lg:h-[500px] xl:h-[500px] fade-in">
+            <div className="w-full h-[300px] lg:w-[70%] xl:w-[70%] md:h-[500px] lg:h-[500px] xl:h-[500px] overflow-x-hidden fade-in">
                 <Hero3D/>
             </div>  
         </div>
