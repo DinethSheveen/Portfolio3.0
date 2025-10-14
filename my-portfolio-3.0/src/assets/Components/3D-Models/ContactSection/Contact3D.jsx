@@ -12,7 +12,7 @@ function Contact3D() {
     <Canvas camera={{position:[0,0,25], fov:45, near:0.1, far:1000}}>
           {/* LIGHTINGS */}
           <directionalLight position={[1,1,2]} color="white" intensity={10}/>
-          <spotLight position={[0,0,0]} color="orange" intensity={10}/>
+          <spotLight position={[-1,0.2,-4]} color="orange" penumbra={0.8} angle={0.8} intensity={15}/>
     
           {/* ORBIT CONTROLS */}
           <OrbitControls enableZoom={!isMobile} maxDistance={10} minDistance={5} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/4}/>
