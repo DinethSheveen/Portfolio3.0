@@ -19,6 +19,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import Featured from './assets/Sections/Featured';
 import Skills from './assets/Sections/Skills';
+import Contact from './assets/Sections/Contact';
 
 function App() {
 
@@ -113,6 +114,7 @@ function App() {
     <TechAnimation tech_icons={tech_icons}/>
     <Featured featured_details={featured_details}/>
     <Skills tech_icons={tech_icons}/>
+    <Contact/>
     </>
   )
 }
