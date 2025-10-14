@@ -13,9 +13,12 @@ function Hero3D() {
       {/* LIGHTINGS */}
       <spotLight position={[-2,1,-4]} color="#b603fc" penumbra={0.2} angle={3} intensity={30}/>
       <spotLight position={[2,1,-4]} color="#fc039d" penumbra={1} angle={3} intensity={15}/>
-      <spotLight position={[2,-3,4]} color="#aba7aa" intensity={5}/>
+      <spotLight position={[2,-2,4]} color="#aba7aa" intensity={5}/>
       <spotLight position={[-3,-2,-2]} color="#aba7aa" intensity={5}/>
-      
+
+      {/* LIGHTING TO THE BACK RIGHT CONTROL*/}
+      <spotLight position={[4,2,-4]} color="white" intensity={10} angle={30}/>
+
       {/* ORBIT CONTROLS */}
       <OrbitControls maxDistance={10} minDistance={5} enableZoom={!isMobile} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/4}/>
 
