@@ -1,23 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import TitleHeader from '../Components/TitleHeader/TitleHeader'
 import emailjs from '@emailjs/browser';
 
 function Contact(){
   const form = useRef();
+  const [loading,setLoading] = useState(false)
+
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY
+  const templateId = import.meta.env.VITE_TEMPLATE_ID
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true)
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert("✅ Your message has been sent! Thank you.");
+          form.current.reset(); // Clear the form
+          setLoading(false)
         },
-        (error) => {
-          console.log('FAILED...', error.text);
+        () => {
+          alert("⚠️ Something went wrong. Please try again.");
+          setLoading(false)
         },
       );
   };
@@ -35,12 +43,12 @@ function Contact(){
           <div className="w-full text-white bg-gray-900 rounded-[10px] p-5 md:w-[70%] lg:w-[50%] xl:w-[40%]">
             <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
               <label>Name</label>
-              <input type="text" name="user_name" placeholder='Your good name' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
+              <input type="text" name="name" placeholder='Your good name' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
               <label>Email</label>
-              <input type="email" name="user_email" placeholder='Your Email' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
+              <input type="email" name="email" placeholder='Your Email' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
               <label>Message</label>
               <textarea name="message" rows={5} className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' placeholder='Share your thoughts or feedback…'/>
-              <input type="submit" value="Send" className='bg-gray-400 py-3 px-6 rounded-[5px] cursor-pointer transition-[1s] hover:bg-gray-800'/>
+              <input type="submit" value={loading?"Sending Message...": "Send Message"} className='bg-gray-400 py-3 px-6 rounded-[5px] cursor-pointer transition-[1s] hover:bg-gray-800'/>
             </form>
             </div>
           {/* RIGHT SECTION - 3D MODEL*/}
