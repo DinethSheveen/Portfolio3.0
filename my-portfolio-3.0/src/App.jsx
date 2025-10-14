@@ -2,14 +2,18 @@ import React from 'react'
 import "./App.css"
 import Navbar from './assets/Sections/Navbar'
 import Hero from "./assets/Sections/Hero"
-import Projects from './assets/Sections/Projects';
-
 import Experience from './assets/Sections/Experience';
+import Projects from './assets/Sections/Projects';
+import TechAnimation from './assets/Sections/TechAnimation';
+import Featured from './assets/Sections/Featured';
+import Skills from './assets/Sections/Skills';
+import Contact from './assets/Sections/Contact';
+import Footer from './assets/Sections/Footer';
+
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { RiAlignItemBottomFill } from "react-icons/ri";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 
-import TechAnimation from './assets/Sections/TechAnimation';
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -17,9 +21,7 @@ import { SiMysql } from "react-icons/si";
 import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
-import Featured from './assets/Sections/Featured';
-import Skills from './assets/Sections/Skills';
-import Contact from './assets/Sections/Contact';
+
 
 function App() {
 
@@ -115,6 +117,7 @@ function App() {
     <Featured featured_details={featured_details}/>
     <Skills tech_icons={tech_icons}/>
     <Contact/>
+    <Footer/>
     </>
   )
 }
