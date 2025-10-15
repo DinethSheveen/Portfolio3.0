@@ -19,8 +19,8 @@ function Footer() {
 
                 {/* SOCIAL-MEDIA */}
                 <div className='flex justify-center items-center gap-2'>
-                    <a href="https://www.linkedin.com/in/dineth-fernando-b94b68295/" target='_blank' className='text-2xl hover:scale-[1.1] hover:bg-white hover:text-black'><FaLinkedin/></a>
-                    <a href="https://github.com/DinethSheveen" target='_blank' className='text-2xl hover:scale-[1.1] hover:bg-white hover:text-black'><FaSquareGithub/></a>
+                    <a href="https://www.linkedin.com/in/dineth-fernando-b94b68295/" target='_blank' className='text-3xl hover:scale-[1.1] hover:opacity-[0.7]'><FaLinkedin/></a>
+                    <a href="https://github.com/DinethSheveen" target='_blank' className='text-3xl hover:scale-[1.1] hover:opacity-[0.7]'><FaSquareGithub/></a>
                 </div>
 
                 {/* COPYRIGHTS */}
