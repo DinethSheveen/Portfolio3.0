@@ -27,14 +27,25 @@ function Contact(){
       // IF SUCCESSFULL
       .then(
         () => {
-          form.current.reset(); // Clear the form
-          setLoading(false)
           setAlertMsg({status:true,message:"✅ Form Submitted Successfully"})
+          form.current.reset(); // CLEARING THE FORM
+          setLoading(false)
+          
+          // HIDE THE ALERT BOX AFTER 3 SECONDS
+          setTimeout(()=>{
+            setAlertMsg({status:null})
+          },3000)
         },
         // IF UNSUCCESSFULL 
         () => {
-          setLoading(false)
+          form.current.reset();
           setAlertMsg({status:false,message:"❌ Oops! Something went wrong. Try again later"})
+          setLoading(false)
+          
+          // HIDE THE ALERT BOX AFTER 3 SECONDS
+          setTimeout(()=>{
+            setAlertMsg({status:null})
+          },3000)
         },
       );
   };
@@ -47,7 +58,7 @@ function Contact(){
       {/* CONTACT CONTAINER */}
       <div className='my-10 px-10 md:px-10 lg:px-10 xl-px-10'>
         {/* FLEX-CONTAINER */}
-        <div className="flex flex-col justify-center items-center gap-10 md:flex-row lg:lex-row xl:flex-row">
+        <div className="flex flex-col justify-center items-center gap-10 md:flex-row lg:flex-row xl:flex-row">
           {/* LEFT SECTION - FORM*/}
           <div className="w-full text-white bg-gray-900 rounded-[10px] p-5 md:w-[40%] lg:w-[40%] xl:w-[50%]">
             <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
@@ -68,7 +79,9 @@ function Contact(){
 
         {/* ALERT MESSAGES - FORM STATUS */}
         <div className={`fixed bottom-20 transition-all ${alertMsg.status===null?`right-[-100%]`:`right-0`}`}>
-          <FaWindowClose className={`absolute z-10 top-2 right-2 text-[20px] cursor-pointer ${alertMsg.status===true?`text-green-500`:`text-red-400`}`}/>
+          {/* <FaWindowClose className={`absolute z-10 top-2 right-2 text-[20px] cursor-pointer ${alertMsg.status===true?`text-green-500`:`text-red-400`}`} onClick={()=>{
+            setAlertMsg({status:null})
+          }}/> */}
           <div className={`sg w-[300px] h-[100px] bg-transparent backdrop-blur-3xl rounded-2xl p-3 flex justify-center items-center ${alertMsg.status===true?`text-green-400`:`text-red-500`}`}>{alertMsg.message}</div>
         </div>
       </div>
