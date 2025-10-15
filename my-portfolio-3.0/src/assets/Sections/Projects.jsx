@@ -62,6 +62,7 @@ function Projects({ side_projects }) {
               return (
                 <div key={index}>
                   <img
+                    loading="lazy"
                     src={side_project.image}
                     alt= {side_project.alt}
                     className="rounded-2xl scroll-in"
