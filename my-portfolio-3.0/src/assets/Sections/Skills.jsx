@@ -26,7 +26,7 @@ function Skills({tech_icons}) {
                 scrollTrigger : {
                     trigger : element,
                     start:"top 99%",
-                    end : "bottom 80%",
+                    end : "bottom 90%",
                     scrub:true
                 }
             })
