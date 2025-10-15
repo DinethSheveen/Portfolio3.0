@@ -27,7 +27,7 @@ function Hero({heroWords}) {
             {/* LEFT - INTRO */}
             <div className="flex flex-col gap-4 lg:w-[40%]">
                 <div>
-                    <h1 className='fade-in text-2xl md:text-5xl flex gap-2 items-center'>
+                    <h1 className='fade-in text-2xl md:text-4xl flex gap-2 items-center'>
                         Shaping 
                         <span className='overflow-hidden'>
                             <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{heroWords.map((heroWord,index)=>{return(
@@ -41,10 +41,10 @@ function Hero({heroWords}) {
                     </h1>
                 </div>
                 <div>
-                    <h1 className='fade-in text-2xl md:text-5xl'>into real Projects</h1>
+                    <h1 className='fade-in text-2xl md:text-4xl'>into real Projects</h1>
                 </div>
                 <div>
-                    <h1 className='fade-in text-2xl md:text-5xl'>that Inspire Change</h1>
+                    <h1 className='fade-in text-2xl md:text-4xl'>that Inspire Change</h1>
                 </div>
 
                 {/* PARA INTRO */}
