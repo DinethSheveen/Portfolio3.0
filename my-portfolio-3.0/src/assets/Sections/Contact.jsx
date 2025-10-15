@@ -1,11 +1,17 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import TitleHeader from '../Components/TitleHeader/TitleHeader'
 import emailjs from '@emailjs/browser';
 import Contact3D from '../Components/3D-Models/ContactSection/Contact3D';
+import { FaWindowClose } from "react-icons/fa"
 
 function Contact(){
   const form = useRef();
   const [loading,setLoading] = useState(false)
+  const [alertMsg,setAlertMsg] = useState({
+    status:null,
+    message : "",
+  })
+
 
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY
@@ -23,10 +29,12 @@ function Contact(){
         () => {
           form.current.reset(); // Clear the form
           setLoading(false)
+          setAlertMsg({status:true,message:"✅ Form Submitted Successfully"})
         },
         // IF UNSUCCESSFULL 
         () => {
           setLoading(false)
+          setAlertMsg({status:false,message:"❌ Oops! Something went wrong. Try again later"})
         },
       );
   };
@@ -56,6 +64,12 @@ function Contact(){
           <div className='w-full h-[300px] md:w-[60%] lg:w-[50%] xl:w-[50%] md:h-[500px] lg:h-[500px] xl:h-[500px] overflow-x-hidden'>
             <Contact3D/>
           </div>
+        </div>
+
+        {/* ALERT MESSAGES - FORM STATUS */}
+        <div className={`fixed bottom-20 transition-all ${alertMsg.status===null?`right-[-100%]`:`right-0`}`}>
+          <FaWindowClose className={`absolute z-10 top-2 right-2 text-[20px] cursor-pointer ${alertMsg.status===true?`text-green-500`:`text-red-400`}`}/>
+          <div className={`sg w-[300px] h-[100px] bg-transparent backdrop-blur-3xl rounded-2xl p-3 flex justify-center items-center ${alertMsg.status===true?`text-green-400`:`text-red-500`}`}>{alertMsg.message}</div>
         </div>
       </div>
     </>
