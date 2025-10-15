@@ -7,7 +7,7 @@ function Navbar() {
             {/* FLEX CONTAINER */}
             <div className="text-white flex justify-between items-center bg-gray-900 px-8 py-4 md:rounded-2xl">
                 {/* LOGO */}
-                <p className='text-white font-bold cursor-pointer'><a href="">Dineth | DSF</a></p>
+                <p className='text-white font-bold cursor-pointer'><a href="#">Dineth | DSF</a></p>
                 {/* MENY ITEMS */}
                 <div className='hidden md:flex gap-4'>
                     <a href="#projects" className='transition-all hover:font-bold hover:tracking-wider'>Projects</a>
