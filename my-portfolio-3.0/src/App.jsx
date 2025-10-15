@@ -21,6 +21,7 @@ import { SiMysql } from "react-icons/si";
 import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import Qualifications from './assets/Sections/Qualifications';
 
 
 function App() {
@@ -107,6 +108,19 @@ function App() {
       {icon : "/icons/clock_icon.svg",title:"Deadline-Driven Results",message:"Completing tasks efficiently with accuracy and attention to detail."}
     ]
 
+    // EDUCATION SECTION
+    const education_details = [
+      {
+        name : "Leeds International School",year:"2010 - 2021",study_type:"Ordinary Level Examinations",results:"9A's",textColor:"text-purple-500",country:"Colombo-LK"
+      },
+      {
+        name:"Informatics Institute of Technology",year:"2021 - 2022",study_type:"Foundation Certificate for Higher Education",results:"Distinction Pass",textColor:"text-red-500",country:"Colombo-LK"
+      },
+      {
+        name:"University of Westminster",year:"2023 - Present",study_type:"BEng Software Engineering",results:"... To be graudated in 2027",textColor:"text-amber-500",country:"London-UK"  
+      }
+    ]
+
   return (
     <>
     <Navbar/>
@@ -116,6 +130,7 @@ function App() {
     <TechAnimation tech_icons={tech_icons}/>
     <Featured featured_details={featured_details}/>
     <Skills tech_icons={tech_icons}/>
+    <Qualifications education_details={education_details}/>
     <Contact/>
     <Footer/>
     </>
