@@ -3,6 +3,7 @@ import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import {gsap} from "gsap"
 import {useGSAP} from "@gsap/react"
 import Hero3D from '../Components/3D-Models/HeroSection/Hero3D';
+import { FaFileDownload } from "react-icons/fa";
 
 function Hero({heroWords}) {
 
@@ -27,7 +28,7 @@ function Hero({heroWords}) {
             {/* LEFT - INTRO */}
             <div className="flex flex-col gap-4 lg:w-[40%]">
                 <div>
-                    <h1 className='fade-in text-2xl md:text-4xl flex gap-2 items-center'>
+                    <h1 className='fade-in text-2xl flex gap-2 items-center md:text-4xl lg:text-5xl'>
                         Shaping 
                         <span className='overflow-hidden'>
                             <span className='flex flex-col gap-12 justify-center items-center h-10 md:h-12 slider-animate'>{heroWords.map((heroWord,index)=>{return(
@@ -41,10 +42,10 @@ function Hero({heroWords}) {
                     </h1>
                 </div>
                 <div>
-                    <h1 className='fade-in text-2xl md:text-4xl'>into real Projects</h1>
+                    <h1 className='fade-in text-2xl md:text-4xl lg:text-5xl'>into real Projects</h1>
                 </div>
                 <div>
-                    <h1 className='fade-in text-2xl md:text-4xl'>that Inspire Change</h1>
+                    <h1 className='fade-in text-2xl md:text-4xl lg:text-5xl'>that Inspire Change</h1>
                 </div>
 
                 {/* PARA INTRO */}
@@ -53,8 +54,9 @@ function Hero({heroWords}) {
                 </div>
 
                 {/* BUTTON */}
-                <div>
-                    <a href="#projects" className='flex items-center gap-2 max-w-[180px] bg-gray-100 px-6 py-3 text-black rounded-[10px] hover:bg-gray-300 active:bg-gray-500'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a>
+                <div className='flex flex-col-reverse gap-5 justify-around items-center md:flex-row'>
+                    <a href="#projects" className='flex items-center gap-2 bg-gray-100 px-6 py-3 text-black rounded-[10px] hover:bg-gray-300 active:bg-gray-500'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a>
+                    <a href="" className='flex items-center gap-2 bg-gray-700 hover:bg-gray-800 active:bg-gray-900 px-6 py-3 rounded-[10px]'>Resume <FaFileDownload/></a>
                 </div>
 
             </div>
