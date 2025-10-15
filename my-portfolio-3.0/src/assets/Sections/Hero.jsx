@@ -54,7 +54,7 @@ function Hero({heroWords}) {
 
                 {/* BUTTON */}
                 <div>
-                    <button className='bg-gray-100 px-6 py-3 text-black rounded-[10px] hover:bg-gray-300 active:bg-gray-500'><a href="#projects" className='flex items-center gap-2'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a></button>
+                    <a href="#projects" className='flex items-center gap-2 max-w-[180px] bg-gray-100 px-6 py-3 text-black rounded-[10px] hover:bg-gray-300 active:bg-gray-500'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a>
                 </div>
 
             </div>
