@@ -33,20 +33,19 @@ function Qualifications({education_details}) {
       })
     })
 
-    gsap.fromTo(".coding",{
-      opacity:0,
-      xPercent : -30
-    },
-  {
-    xPercent:0,
-    opacity:1,
-    scrollTrigger : {
-      trigger : ".coding",
-      start : "top 99%",
-      end : "bottom 90%",
-      scrub : true
-    }
-  })
+    gsap.fromTo(".timeline-animation",{
+      scaleY : 0
+    },{
+      scaleY:1,
+      ease : "back.inOut",
+      duration:1,
+      scrollTrigger : {
+        trigger : ".timeline",
+        start :"top 90%",
+        end : "bottom bottom",
+        scrub : true,
+      }
+    })
   },[])
 
   return (
@@ -54,24 +53,24 @@ function Qualifications({education_details}) {
         <TitleHeader title="🛠️ Education Overview ⚙️"/>
 
         {/* TIMELINE */}
-        <div className="timeline">
+        <div className="timeline my-10">
           
-          <div className='flex justify-between'>
+          <div ref={scrollRef} className='flex justify-between'>
 
             <div className="hidden w-[50%] md:flex md:justify-center md:items-center">
-              <div className="coding w-[80%] h-[70%]">
-                <img loading='lazy' src={codingMan} className='w-[100%] h-[100%]' alt="A man coding" />
+              <div className="education-card w-[80%]">
+                <img loading='lazy' src={codingMan} className='w-[100%]' alt="A man coding" />
               </div>
             </div>
 
-            <div className="mx-5 bg-gradient-to-b from-purple-500 via-red-500 to-amber-500 w-[5px] h-[100vh] md:mx-auto"></div>
+            <div className="timeline-animation mx-5 bg-gradient-to-b from-purple-500 via-red-500 to-green-500 w-[5px] h-[110vh] md:mx-auto md:h-[125vh] lg:h-[115vh] origin-top scale-y-0"></div>
 
             {/* COLUMN THREE */}
-            <div ref={scrollRef} className="flex flex-col gap-15 justify-start items-start mt-10 w-full px-5 text-white md:left-[45%] md:w-[50%]">
+            <div className="flex flex-col gap-5 justify-center items-start mt-5 w-full px-5 text-white md:left-[45%] md:w-[50%] md:gap-10">
               {education_details.map((education_detail)=>{
                 return(
                   <div key={education_detail.name} className='bg-gray-800 px-6 py-3 w-full rounded-[10px] education-card'>
-                    <p className={`text-2xl ${education_detail.textColor}`}>{education_detail.name} ({education_detail.country})</p>
+                    <p className={`text-1xl md:text-2xl ${education_detail.textColor}`}>🎓{education_detail.name} ({education_detail.country})</p>
                     <p className='text-gray-300 text-[15px]'>{education_detail.year}</p>          
                     <p className='my-2 font-bold'>{education_detail.study_type}</p>
                     <p className='my-2 font-bold'>{education_detail.results}</p>
