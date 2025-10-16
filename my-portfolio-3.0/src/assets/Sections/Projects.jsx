@@ -35,7 +35,7 @@ function Projects({ side_projects }) {
 
   return (
     <>
-      <TitleHeader title="🚀 Project Overview" header="Crafted with Code"/>
+      <TitleHeader title="🚀 Project Overview" header="Signature Crafts"/>
       <div className="project-showcase px-10" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col mt-5 md:flex-row lg:flex-row gap-6">
