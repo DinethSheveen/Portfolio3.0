@@ -66,7 +66,7 @@ function Qualifications({education_details}) {
             <div className="timeline-animation mx-5 bg-gradient-to-b from-purple-500 via-red-500 to-green-500 w-[5px] h-[110vh] md:mx-auto md:h-[125vh] lg:h-[115vh] origin-top scale-y-0"></div>
 
             {/* COLUMN THREE */}
-            <div className="flex flex-col gap-5 justify-center items-start mt-5 w-full px-5 text-white md:left-[45%] md:w-[50%] md:gap-10">
+            <div className="flex flex-col gap-5 justify-center items-start w-full px-5 text-white md:left-[45%] md:w-[50%] md:gap-15">
               {education_details.map((education_detail)=>{
                 return(
                   <div key={education_detail.name} className='bg-gray-800 px-6 py-3 w-full rounded-[10px] education-card'>
