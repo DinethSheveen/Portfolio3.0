@@ -41,7 +41,7 @@ function Qualifications({education_details}) {
       duration:1,
       scrollTrigger : {
         trigger : ".timeline",
-        start :"top 90%",
+        start :"top 95%",
         end : "bottom bottom",
         scrub : true,
       }
@@ -50,7 +50,7 @@ function Qualifications({education_details}) {
 
   return (
     <>
-        <TitleHeader title="🛠️ Education Overview ⚙️"/>
+        <TitleHeader title="🛠️ Education Overview ⚙️" header="Academic Milestones"/>
 
         {/* TIMELINE */}
         <div className="timeline my-10">
@@ -70,7 +70,7 @@ function Qualifications({education_details}) {
               {education_details.map((education_detail)=>{
                 return(
                   <div key={education_detail.name} className='bg-gray-800 px-6 py-3 w-full rounded-[10px] education-card'>
-                    <p className={`text-1xl md:text-2xl ${education_detail.textColor}`}>🎓{education_detail.name} ({education_detail.country})</p>
+                    <p className={`text-1xl md:text-2xl ${education_detail.textColor}`}>{education_detail.emoji} {education_detail.name} ({education_detail.country})</p>
                     <p className='text-gray-300 text-[15px]'>{education_detail.year}</p>          
                     <p className='my-2 font-bold'>{education_detail.study_type}</p>
                     <p className='my-2 font-bold'>{education_detail.results}</p>
