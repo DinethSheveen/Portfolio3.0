@@ -111,16 +111,16 @@ function App() {
     // EDUCATION SECTION
     const education_details = [
       {
-        name : "Leeds International School",year:"2010 - 2021",study_type:"Ordinary Level Examinations",results:"9A's",textColor:"text-purple-500",country:"Colombo-LK"
+        name : "Leeds International School",year:"2010 - 2021",study_type:"Ordinary Level Examinations",results:"9A's",textColor:"text-purple-500",country:"Colombo-LK",emoji:"📓"
       },
       {
-        name:"IIT",year:"2021 Sep - 2022 May",study_type:"Foundation Certificate for Higher Education",results:"Distinction Pass",textColor:"text-red-500",country:"Colombo-LK"
+        name:"IIT",year:"2021 Sep - 2022 May",study_type:"Foundation Certificate for Higher Education",results:"Distinction Pass",textColor:"text-red-500",country:"Colombo-LK",emoji:"🎓"
       },
       {
-        name:"University of Westminster",year:"2023 Sep - Present",study_type:"BEng Software Engineering",results:"... To be graudated in 2027",textColor:"text-amber-500",country:"London-UK"  
+        name:"University of Westminster",year:"2023 Sep - Present",study_type:"BEng Software Engineering",results:"... To be graudated in 2027",textColor:"text-amber-500",country:"London-UK",emoji:"🎓"  
       },
       {
-        name:"IEEE",year:"2023 - 2024",study_type:"Organizing Committee",results:"CodeSprint 08",textColor:"text-green-600",country:"Colombo-LK",emoji:"🧑‍🚀"
+        name:"IEEE",year:"2023 - 2024",study_type:"Organizing Committee",results:"CodeSprint 08",textColor:"text-green-600",country:"IIT",emoji:"🧑‍🚀"
       }
     ]
 
