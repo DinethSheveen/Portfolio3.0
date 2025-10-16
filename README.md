@@ -30,17 +30,17 @@ This project showcases my skills, projects, and journey as a software developer 
 
 ## 📸 Preview
 
-# Laptop View
+### Laptop View
 <figure>
     <img src="/my-portfolio-3.0/public/Working-Project-SS/Laptop-view.png" width="500">
 </figure>
 
-# Tablet View
+### Tablet View
 <figure>
     <img src="/my-portfolio-3.0/public/Working-Project-SS/Tablet-view.png" width="400">
 </figure>
 
-# Mobile View
+### Mobile View
 <figure>
     <img src="/my-portfolio-3.0/public/Working-Project-SS/mobile-view.png" width="300">
 </figure>
