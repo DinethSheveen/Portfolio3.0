@@ -55,7 +55,7 @@ function Contact(){
       <TitleHeader title="💬 Ideas? I'm all Ears ✨" header="Feel Free to Contact"/>
 
       {/* CONTACT CONTAINER */}
-      <div className='my-10 px-10 md:px-10 lg:px-10 xl-px-10'>
+      <div id='contact' className='my-10 px-10 md:px-10 lg:px-10 xl-px-10'>
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col justify-center items-center gap-10 md:flex-row lg:flex-row xl:flex-row">
           {/* LEFT SECTION - FORM*/}
@@ -67,7 +67,7 @@ function Contact(){
               <input type="email" name="email" placeholder='Your Email' className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' required/>
               <label>Message</label>
               <textarea name="message" rows={5} className='bg-gray-700 rounded-[5px] my-[10px] py-[5px] pl-2' placeholder='Share your thoughts or feedback…'/>
-              <input type="submit" value={loading?"Sending Message...": "Send Message"} className='bg-gray-400 py-3 px-6 rounded-[5px] cursor-pointer transition-[1s] hover:bg-gray-800'/>
+              <input type="submit" value={loading?"Sending Message...": "Send Message"} className='bg-gray-400 py-3 px-6 rounded-[5px] cursor-pointer transition-[1s] hover:bg-gray-800 active:bg-gray-900'/>
             </form>
             </div>
           {/* RIGHT SECTION - 3D MODEL*/}
@@ -78,9 +78,6 @@ function Contact(){
 
         {/* ALERT MESSAGES - FORM STATUS */}
         <div className={`fixed bottom-20 transition-all ${alertMsg.status===null?`right-[-100%]`:`right-0`}`}>
-          {/* <FaWindowClose className={`absolute z-10 top-2 right-2 text-[20px] cursor-pointer ${alertMsg.status===true?`text-green-500`:`text-red-400`}`} onClick={()=>{
-            setAlertMsg({status:null})
-          }}/> */}
           <div className={`sg w-[300px] h-[100px] bg-transparent backdrop-blur-3xl rounded-2xl p-3 flex justify-center items-center ${alertMsg.status===true?`text-green-400`:`text-red-500`}`}>{alertMsg.message}</div>
         </div>
       </div>

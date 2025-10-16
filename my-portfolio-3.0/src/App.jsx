@@ -85,8 +85,8 @@ function App() {
     {
       image : "/images/project3.png",
       alt : "e-commerce web app",
-      title : "E-Commerce Web App built with the use of React JS, CSS",
-      description : "A seamless, user-friendly online-store ", 
+      title : "E-Commerce React App – Modern Online Storefront",
+      description : "A sleek, responsive e-commerce application built with React.js. This app lets users browse products, manage a cart, and customize delivery options with full front-end and back-end integration.", 
     }
   ]
 

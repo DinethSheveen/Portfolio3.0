@@ -38,7 +38,7 @@ function Projects({ side_projects }) {
       <TitleHeader title="🚀 Project Overview" header="Signature Crafts"/>
       <div className="project-showcase px-10" ref={scrollRef}>
         {/* FLEX-CONTAINER */}
-        <div className="flex flex-col mt-5 md:flex-row lg:flex-row gap-6">
+        <div className="flex flex-col mt-5 text-center md:text-left md:flex-row lg:flex-row gap-6">
           {/* LEFT SECTION - PROJECT 01*/}
           <div className="flex flex-col gap-6 md:pb-30 lg:pb-30">
             {/* IMAGE-CONTAINER */}
