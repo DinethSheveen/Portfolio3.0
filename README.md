@@ -28,7 +28,7 @@ This project showcases my skills, projects, and journey as a software developer 
 
 ---
 
-## Responsiveness
+## 📸 Preview
 
 # Laptop View
 <figure>
