@@ -52,8 +52,7 @@ function Contact(){
 
   return (
     <>
-      <TitleHeader title="💬 Ideas? I'm all Ears ✨"/>
-      <div id="contact" className="text-2xl flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-white md:text-3xl lg:text-3xl xl:text-4xl">Feel Free to Contact</div>
+      <TitleHeader title="💬 Ideas? I'm all Ears ✨" header="Feel Free to Contact"/>
 
       {/* CONTACT CONTAINER */}
       <div className='my-10 px-10 md:px-10 lg:px-10 xl-px-10'>
