@@ -54,7 +54,7 @@ function Hero({heroWords}) {
                 </div>
 
                 {/* BUTTON */}
-                <div className='flex flex-col-reverse gap-5 justify-around items-center md:flex-row'>
+                <div className='flex flex-col-reverse gap-5 justify-start items-start md:flex-row md:items-center'>
                     <a href="#projects" className='flex items-center gap-2 bg-gray-100 px-6 py-3 text-black rounded-[10px] hover:bg-gray-300 active:bg-gray-500'>See me work <FaRegArrowAltCircleDown className='arrow-animate'/></a>
                     <a href="" className='flex items-center gap-2 bg-gray-700 hover:bg-gray-800 active:bg-gray-900 px-6 py-3 rounded-[10px]'>Resume <FaFileDownload/></a>
                 </div>
