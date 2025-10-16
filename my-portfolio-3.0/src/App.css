@@ -54,3 +54,26 @@ body{
         transform: translateY(500%);
     }
 }
+
+@media(min-width:768px) and (max-width:1024px){
+    @keyframes scrollY{
+        10%{
+            transform: translateY(-460%);
+        }
+        30%{
+            transform: translateY(-270%);
+        }
+        50%{
+            transform: translateY(-100%);
+        }
+        70%{
+            transform: translateY(100%);
+        }
+        90%{
+            transform: translateY(270%);
+        }
+        100%{
+            transform: translateY(470%);
+        }
+    }
+}
