@@ -3,6 +3,10 @@
 Welcome to the repository for my personal developer portfolio — **Portfolio 3.0**.  
 This project showcases my skills, projects, and journey as a software developer in a clean, modern, and responsive design.
 
+<figure>
+    <img src="/my-portfolio-3.0/public/Working-Project-SS/HeroSection.png">
+</figure>
+
 ---
 
 ## ✨ Features
@@ -22,6 +26,24 @@ This project showcases my skills, projects, and journey as a software developer 
 - **Icons**: React Icons 
 - **Version Control**: Git & GitHub  
 
+---
+
+## Responsiveness
+
+# Laptop View
+<figure>
+    <img src="/my-portfolio-3.0/public/Working-Project-SS/Laptop-view.png" width="500">
+</figure>
+
+# Tablet View
+<figure>
+    <img src="/my-portfolio-3.0/public/Working-Project-SS/Tablet-view.png" width="400">
+</figure>
+
+# Mobile View
+<figure>
+    <img src="/my-portfolio-3.0/public/Working-Project-SS/mobile-view.png" width="300">
+</figure>
 ---
 
 ## 🚀 Getting Started
