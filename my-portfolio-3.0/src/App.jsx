@@ -77,10 +77,10 @@ function App() {
   // SIDE PROJECTS OF THE PROJECT SECTION
   const side_projects = [
     {
-      image : "/images/project2.png",
+      image : "/images/project1.png",
       alt: "gsap-landing-page",
-      title : "A visually appealing page built with React JS, TailwindCSS, and GSAP for a fluid user experience.",
-      description : "A 3d Landing page powered with GSAP, React JS and TailwindCSS ", 
+      title : "NIKE Product Showcase – React + GSAP + TailwindsCSS",
+      description : "An immersive product showcase developed with React.js and GSAP, featuring fluid animations, and responsive UI design for a premium e-commerce feel using TailwindCss.", 
     },
     {
       image : "/images/project3.png",
