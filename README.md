@@ -3,6 +3,8 @@
 Welcome to the repository for my personal developer portfolio — **Portfolio 3.0**.  
 Portfolio 3.0 is my main personal site built with React, Vite, Tailwind CSS, GSAP, and Three.js. It features a responsive layout, animated transitions, and 3D elements to showcase my projects dynamically. I focused on performance, clean UI/UX, and polished interactions. A live demo is available and the code is fully open source on GitHub.
 
+Live demo : https://dineth-fernando.vercel.app
+
 <figure>
     <img src="/my-portfolio-3.0/public/Working-Project-SS/HeroSection.png">
 </figure>
