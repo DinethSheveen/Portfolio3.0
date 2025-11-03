@@ -95,7 +95,7 @@ function App() {
       {icon : <RiTailwindCssFill/>, stack : "tailwind" , backgroundColor:"bg-white", color : "text-blue-400",skill:"Responsive Design"},
       {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300", skill:"React Development"},
       {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500",skill:"Project Management"},
-      {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-gray-800", color : "text-green-600",skill:"Backend Devlepment"},
+      {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-gray-800", color : "text-green-600",skill:"Backend Develepment"},
       {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
       {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
       {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-white", color : "text-blue-300"}
