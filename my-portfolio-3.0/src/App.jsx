@@ -17,8 +17,8 @@ import { RiCompassDiscoverLine } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql } from "react-icons/si";
-import { FaJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import Qualifications from './assets/Sections/Qualifications';
@@ -96,9 +96,9 @@ function App() {
       {icon : <FaReact/>, stack : "react" , backgroundColor:"bg-gray-800", color : "text-sky-300", skill:"React Development"},
       {icon : <FaGitAlt/>, stack : "git" , backgroundColor:"bg-white", color : "text-orange-500",skill:"Project Management"},
       {icon : <FaNodeJs/>, stack : "nodejs" , backgroundColor:"bg-gray-800", color : "text-green-600",skill:"Backend Develepment"},
-      {icon : <FaJs/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
-      {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""},
-      {icon : <SiMysql/>, stack : "sql" , backgroundColor:"bg-white", color : "text-blue-300"}
+      {icon : <SiExpress/>, stack : "js" , backgroundColor:"bg-white", color : "text-amber-400"},
+      {icon : <SiMongodb/>, stack : "sql" , backgroundColor:"bg-gray-800", color : "text-green-600"},
+      {icon : <FaGithub/>, stack : "github" , backgroundColor:"bg-gray-800", color : ""}
     ]
 
     // FEATURED SECTION
