@@ -5,7 +5,7 @@ import {useGSAP} from "@gsap/react"
 import Hero3D from '../Components/3D-Models/HeroSection/Hero3D';
 import { FaFileDownload } from "react-icons/fa";
 
-import cv from "../../../public/Resume/Dineth_Fernando_CV.pdf"
+import cv from "../../../public/Resume/Dineth_Fernando.pdf"
 
 function Hero({heroWords}) {
 
