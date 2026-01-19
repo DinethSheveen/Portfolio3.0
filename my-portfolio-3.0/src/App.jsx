@@ -79,8 +79,8 @@ function App() {
     {
       image : "/images/project1.png",
       alt: "gsap-landing-page",
-      title : "NIKE Product Showcase – React + GSAP + TailwindsCSS",
-      description : "An immersive product showcase developed with React.js and GSAP, featuring fluid animations, and responsive UI design for a premium e-commerce feel using TailwindCss.", 
+      title : "EXPENSE TRACKER – MERN Stack + Multer",
+      description : "A modern Expense Tracker web application built with MERN STACK to help users track and manage their income and expenses with ease.", 
     },
     {
       image : "/images/project3.png",

@@ -6,9 +6,21 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
+// Update your HeroModel component to accept onLoad prop
 export function HeroModel(props) {
-  const { nodes, materials } = useGLTF('/3DModels/developer-room.glb')
+  const { nodes, materials } = useGLTF('/3DModels/developer-room.glb');
+  
+  // Call onLoad when model is loaded
+  React.useEffect(() => {
+    if (props.onLoad && nodes && materials) {
+      props.onLoad();
+    }
+  }, [nodes, materials, props.onLoad]);
+  
   return (
+    <group {...props} dispose={null}>
+      {/* ... all your mesh components ... */}
+      return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes._________6_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.body1_blinn1_0.geometry} material={materials.blinn1} />
@@ -44,6 +56,6 @@ export function HeroModel(props) {
       <mesh geometry={nodes.window4_phong1_0.geometry} material={materials.phong1} />
     </group>
   )
+    </group>
+  );
 }
-
-useGLTF.preload('/3DModels/developer-room.glb')
