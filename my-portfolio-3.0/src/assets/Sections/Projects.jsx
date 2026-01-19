@@ -40,9 +40,9 @@ function Projects({ side_projects }) {
         {/* FLEX-CONTAINER */}
         <div className="flex flex-col mt-5 text-center md:text-left md:flex-row lg:flex-row gap-6">
           {/* LEFT SECTION - PROJECT 01*/}
-          <div className="flex flex-col gap-6 md:pb-30 lg:pb-30">
+          <div className="flex flex-col justify-center gap-6 md:pb-30 lg:pb-30">
             {/* IMAGE-CONTAINER */}
-            <div className="flex flex-1">
+            <div className="flex">
               <img
                 src={project2}
                 alt="movie search web app"
@@ -51,8 +51,8 @@ function Projects({ side_projects }) {
             </div>
             {/* DESCRIPTION */}
             <div className="project-description scroll-in">
-              <p className="text-white my-2 md:text-2xl">CineScope: A React.js and OMDb, TMDB API-powered app for fast, interactive, and mobile-friendly movie exploration.</p>
-              <p className="text-gray-500">An app built with React JS and API Intergration for a fast, user-friendly experience.</p>
+              <p className="text-white my-2 md:text-2xl">SkillSync-AI :  MERN Stack + Gemini API. (In-Progress)</p>
+              <p className="text-gray-500">An AI-powered Resume Builder developed to help users create professional, resumes with the assistance of AI-driven content suggestions and optimizations.</p>
             </div>
           </div>
           {/* RIGHT SECTION - PROJECT 02 & 03*/}
