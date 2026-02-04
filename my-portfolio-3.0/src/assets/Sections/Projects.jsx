@@ -1,6 +1,7 @@
 import project2 from "/images/project2.png";
 import { useRef } from "react";
 import gsap from "gsap"
+import { TbExternalLink } from "react-icons/tb";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import TitleHeader from "../Components/TitleHeader/TitleHeader";
@@ -51,7 +52,7 @@ function Projects({ side_projects }) {
             </div>
             {/* DESCRIPTION */}
             <div className="project-description scroll-in">
-              <p className="text-white my-2 md:text-2xl">SkillSync-AI :  MERN Stack + Gemini API. (In-Progress)</p>
+              <p className="text-white my-2 md:text-2xl">SkillSync-AI :  MERN Stack + Gemini API. (In-Progress) <a href="https://skill-sync-ai-phi.vercel.app/" target="_blank" className="inline-flex"><TbExternalLink/></a></p>
               <p className="text-gray-500">An AI-powered Resume Builder developed to help users create professional, resumes with the assistance of AI-driven content suggestions and optimizations.</p>
             </div>
           </div>
