@@ -78,14 +78,16 @@ function App() {
   const side_projects = [
     {
       image : "/images/project1.png",
-      alt: "gsap-landing-page",
+      alt: "expense-tracker",
       title : "EXPENSE TRACKER – MERN Stack + Multer",
+      gitHub : "https://github.com/DinethSheveen/Expense-Tracker",
       description : "A modern Expense Tracker web application built with MERN STACK to help users track and manage their income and expenses with ease.", 
     },
     {
       image : "/images/project3.png",
       alt : "e-commerce web app",
       title : "E-Commerce React App – Modern Online Storefront",
+      gitHub : "https://github.com/DinethSheveen/E-commerce-application-React",
       description : "A sleek, responsive e-commerce application built with React.js. This app lets users browse products, manage a cart, and customize delivery options with full front-end and back-end integration.", 
     }
   ]

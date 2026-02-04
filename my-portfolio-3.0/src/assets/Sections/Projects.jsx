@@ -2,6 +2,7 @@ import project2 from "/images/project2.png";
 import { useRef } from "react";
 import gsap from "gsap"
 import { TbExternalLink } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import TitleHeader from "../Components/TitleHeader/TitleHeader";
@@ -52,8 +53,18 @@ function Projects({ side_projects }) {
             </div>
             {/* DESCRIPTION */}
             <div className="project-description scroll-in">
-              <p className="text-white my-2 md:text-2xl">SkillSync-AI :  MERN Stack + Gemini API. (In-Progress) <a href="https://skill-sync-ai-phi.vercel.app/" target="_blank" className="inline-flex"><TbExternalLink/></a></p>
+              <p className="text-white my-2 md:text-2xl">SkillSync-AI :  MERN Stack + Gemini API. (In-Progress)</p>
               <p className="text-gray-500">An AI-powered Resume Builder developed to help users create professional, resumes with the assistance of AI-driven content suggestions and optimizations.</p>
+
+              <div className="links my-2">
+                <a href="https://skill-sync-ai-phi.vercel.app/" className="inline-flex items-center text-sm text-gray-900 bg-gray-500 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-gray-500 mx-2" target="_blank"><TbExternalLink/>Live Link</a>
+                <a href="" className="text-sm text-gray-900 bg-gray-500 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-gray-500">
+                      <div className="inline-flex items-center gap-1">
+                        Github
+                        <FaGithub className="text-lg" />
+                      </div>
+                    </a>
+              </div>
             </div>
           </div>
           {/* RIGHT SECTION - PROJECT 02 & 03*/}
@@ -72,9 +83,15 @@ function Projects({ side_projects }) {
                     <p className="text-white my-2">
                       {side_project.title}
                     </p>
-                    <p className="text-gray-500">
+                    <p className="text-gray-500 my-2">
                       {side_project.description}
                     </p>
+                    <a href={side_project.gitHub} className="text-sm text-gray-900 bg-gray-500 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-gray-900 hover:text-gray-500">
+                      <div className="inline-flex items-center gap-1">
+                        Github
+                        <FaGithub className="text-lg" />
+                      </div>
+                    </a>
                   </div>
                 </div>
               );
