@@ -85,10 +85,10 @@ function App() {
     },
     {
       image : "/images/project3.png",
-      alt : "e-commerce web app",
-      title : "E-Commerce React App – Modern Online Storefront",
-      gitHub : "https://github.com/DinethSheveen/E-commerce-application-React",
-      description : "A sleek, responsive e-commerce application built with React.js. This app lets users browse products, manage a cart, and customize delivery options with full front-end and back-end integration.", 
+      alt : "Oppurtuna - Career Oppurtunity Discovery Platform",
+      title : "OPPURTUNA - CAREER OPPORTUNITY DISCOVERY PLATFORM",
+      gitHub : "https://github.com/DinethSheveen/Oppurtuna",
+      description : "A Career Opportunity Discovery Platform built with MERN Stack to help users discover and explore career opportunities based on their skills, interests, and preferences.", 
     }
   ]
 
